@@ -1,0 +1,96 @@
+/*
+      Last updated: Mustafa Rasouli
+      Date: March 29, 2022
+      Description: Using CSS to change the look of the page
+
+*/
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+     
+body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Oswald', sans-serif;
+      background-color: #39378f;
+      animation: move 5s infinite;
+}
+@keyframes move {
+      from {background-color: rgb(66, 51, 51);}
+      to {background-color: rgb(197, 197, 226);}
+}
+     
+.container {
+      padding: 1rem 1.5rem;
+      border: 1px solid black;
+      width: 400px;
+      background-color: #80e2e2;
+}
+     
+h2 {
+      text-align: center;
+      padding: 15px 0;
+}
+     
+     
+.option {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px;
+}
+.result__container {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid black;
+      padding: 0 5px;
+}
+     
+.result-container #result {
+      word-wrap: break-word;
+      max-width: calc(100% - 40px);
+}
+     
+.result_container #copy {
+      height: 40px;
+      width: 40px;
+      background-color: #eb1606;
+      color: #15bd2c;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      animation: move 5s infinite;
+}
+     
+.result_container #copy:hover {
+      background-color: #1c2541;
+      color: #677927;
+      
+}
+     
+#generate {
+      height: 40px;
+      width: 100%;
+      border-radius: 10px;
+      border: none;
+      background-color: #0b132b;
+      color: #d8ecd8;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+}
+     
+#generate:hover {
+      background-color: #5bc0be;
+      color: #14c048;
+}

@@ -1,0 +1,44 @@
+<!--
+    Created By: Mustafa Rasouli
+    Last Updated: 03/24/2022
+    Description: Project0, illustrating basic concept of CSS, HTML, API,events, listeners, and event propagation 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mustafa</title>
+      <link rel="stylesheet" href="style.css" />
+      <script type="module" src="jsclass.js"></script>
+      
+</head>
+<body>
+      <form id="passwordGeneratorForm">
+            <div class="container">
+              <h2>Random Password Generator</h2>
+              <div class="result__container">
+              <span id="result"></span>
+              <button id="copy">Copy</button>
+            </div>
+            <div class="options">
+              <div class="option">
+                <label>Length</label>
+                <input type="number" id="length" min="4" max="10" value="10">
+              </div>
+              <div class="option">
+                <label>Include Uppercase</label>
+                <input type="checkbox" id="uppercase" checked>
+              </div>
+              <div class="option">
+                <label>Include Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+              </div>
+            <button class="btn" id="generate" type="submit">Generate Password</button>
+            </div>
+          </form>
+     
+</body>
+</html>
