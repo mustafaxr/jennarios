@@ -31,6 +31,7 @@ function arrayFromLowToHigh(low, high) {
 }
 
 // using arrow function to generate the password
+//used stak over for refernce 
 let generatePassword = (
       characterAmount,
       includeUppercase,
@@ -49,7 +50,7 @@ let generatePassword = (
       return passwordCharacters.join("");
 };
 
-// event listener to copy password 
+// using event listener to copy password 
  
 copybutton.addEventListener("click", () => {
       const textarea = document.createElement("textarea");
